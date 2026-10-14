@@ -1,3 +1,5 @@
+> **TermuxUltra:X11** is a fork of [termux-x11](https://github.com/termux/termux-x11) for [TermuxUltra](https://github.com/LinuxKernel44/TermuxUltra). It only changes the app name and signs the release with the TermuxUltra key. The package name is unchanged (`com.termux.x11`), so it replaces the upstream app, and uninstalling that one first is needed because the signatures differ. The release is the `standalone` flavor, built with `./gradlew assembleStandaloneRelease` after `git submodule update --init --recursive`. Signing credentials are read from `~/.android-signing/keystore.properties`.
+
 
 # Termux:X11
 
